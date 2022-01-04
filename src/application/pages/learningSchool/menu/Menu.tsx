@@ -1,5 +1,9 @@
 const Menu = () => {
-  return <div>러닝스쿨 Menu</div>;
+  return (
+    <div>
+      <div>러닝스쿨 Menu</div>
+    </div>
+  );
 };
 
 export default Menu;
