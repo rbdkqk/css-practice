@@ -1,8 +1,13 @@
+import React from 'react';
 import { Route, Routes } from 'react-router';
 import Sitemap from './application/pages/sitemap/Sitemap';
 import * as LearningSchool from './application/pages/learningSchool';
 
-function App() {
+type TPartialViewModel = {};
+
+interface IAppProps {}
+
+const App: React.FC<IAppProps> = ({}) => {
   return (
     <Routes>
       <Route path={'/'} element={<Sitemap />} />
@@ -13,6 +18,6 @@ function App() {
       </Route>
     </Routes>
   );
-}
+};
 
 export default App;
