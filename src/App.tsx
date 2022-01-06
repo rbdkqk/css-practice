@@ -1,16 +1,13 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Sitemap from './application/pages/sitemap/Sitemap';
-import * as LearningSchool from './application/pages/learningSchool';
+import LearningSchool from './application/pages/learningSchool';
 
-type TPartialViewModel = {};
-
-interface IAppProps {}
-
-const App: React.FC<IAppProps> = ({}) => {
+const App: React.FC = () => {
   return (
     <Routes>
       <Route path={'/'} element={<Sitemap />} />
+
       <Route path={'learning-school'} element={<LearningSchool.Home />}>
         <Route path={'news'} element={<LearningSchool.News />} />
         <Route path={'menu'} element={<LearningSchool.Menu />} />
